@@ -1,0 +1,82 @@
+/* Footer.css */
+.footer {
+  /* Optional global footer styling */
+}
+
+.footer-container {
+  z-index: 1;
+  position: relative;
+  margin: 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav a {
+  margin: 10px 20px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #f05743;
+}
+
+.footer-social a {
+  margin: 0 8px;
+  color: #222;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #f05743;
+}
+
+/* ===== Frosted Glass Footer Split ===== */
+.footer-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 98vw;
+  margin-bottom: 1px;
+
+  /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(240, 87, 67, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  
+}
+
+/* ===== Frosted Glass Footer Copyright ===== */
+.footer-copyright {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 14px;
+  width: 98vw;
+  color: #888;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid rgba(240, 87, 67, 0.3);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+ margin-top: -10px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-split {
+    width: 95vw;
+  }
+
+  .footer-copyright {
+    width: 95vw;
+  }
+}

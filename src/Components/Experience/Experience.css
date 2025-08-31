@@ -1,0 +1,160 @@
+.experience-container {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  text-align: center;
+  
+  position: relative; /* Needed for absolute positioning inside */
+
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4vw;
+  
+  background: rgba(255, 255, 255, 0.15);  /* Semi-transparent white */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  
+  border-radius: 8px;
+  position: absolute;
+  z-index: 1;
+  width: 15vw;
+  margin-left: -68vw;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  color: #222; /* Text color for visibility */
+  font-weight: 600;
+}
+
+.experience-content {
+  padding: 50px 20px 50px 18px;
+  position: relative;
+  
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  border-radius: 10px;
+  height: auto;
+  width: 76vw;
+  margin-left: 7.5vw;
+  text-align: left;
+  font-size: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  color: #222; /* Text color */
+}
+
+
+.experience-image {
+  width: 8vw; /* Adjust image size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+.experience-container p {
+  width: 66vw;
+  margin-left: 8vw;
+}
+.head-title{
+  font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0 15px 0 15px;
+}
+/* Responsive Styling */
+@media (max-width: 1100px) {
+  .experience-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 20px 0;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    
+    border-radius: 8px;
+    position: absolute; /* Changed from absolute */
+    z-index: 1;
+    width: auto;
+    margin: 0 auto; /* Center it */
+    text-align: center;
+    top: -5vw;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .experience-image {
+   
+    height: auto;
+   
+  }
+
+  .experience-content {
+    padding:20px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
+    width: 97vw; /* Make it more responsive */
+    margin: 0px;
+  
+    margin-top: 0px;
+    
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+.experience-container div{
+  margin-top: 8vw;
+}
+  .experience-container p {
+    width:85vw;
+    text-align: left;
+    margin: 0 auto;
+    font-size:17px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 950px) {
+.heading{
+font-size: 20px;
+}
+.experience-image {
+ width: 12vw;;
+ 
+}
+
+}
+@media (max-width: 650px) {
+  .heading{
+  font-size: 15px;
+  }
+  .experience-image {
+   width: 10vw;;
+   
+  }
+  
+  }
+  @media (max-width: 450px) {
+    .heading{
+    font-size: 15px;
+    }
+    .experience-image {
+     width: 15vw;;
+     
+    }
+    
+    }
