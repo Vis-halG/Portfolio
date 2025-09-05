@@ -112,7 +112,7 @@ margin-bottom: 20px;
     font-size: 16px;
     width: 97vw; /* Make it more responsive */
     margin: 0px;
-    margin-top: 20px;
+    margin-top: 0px;
 
     border: 2px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -125,7 +125,7 @@ margin-bottom: 20px;
     font-size: 16px;
     width: 97vw; /* Make it more responsive */
     margin: 0px;
-    margin-top: 0px;
+    margin-top: 20px;
 
     border: 2px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
