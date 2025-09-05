@@ -104,7 +104,20 @@ margin-bottom: 20px;
     height: auto;
   }
 
-  .experience-content {
+  .experience-content-two {
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
+    width: 97vw; /* Make it more responsive */
+    margin: 0px;
+    margin-top: 20px;
+
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+.experience-content {
     padding: 20px;
     background-color: transparent;
     border-radius: 10px;
@@ -117,7 +130,6 @@ margin-bottom: 20px;
     border: 2px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
-
   .experience-container div {
     margin-top: 10vw;
   }
