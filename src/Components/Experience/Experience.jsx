@@ -55,15 +55,10 @@ function Experience() {
             <strong>Role / Position</strong>
           </p>
           <p>
-            Add your description here. Mention key responsibilities, projects,
-            and technologies you worked with.
-          </p>
-          <p>
-            Highlight teamwork, tools, or achievements that make your
-            experience stand out.
-          </p>
-          <p>
-            Keep the structure consistent so all experience cards look neat.
+           Successfully completed ~300 hours of coursework covering HTML, CSS,
+Flexbox, Grid, and Responsive Design principles. Built and deployed
+multiple projects including a Survey Form, Tribute Page, Technical
+Documentation Page, Product Landing Page.
           </p>
         </div>
       </div>
