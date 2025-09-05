@@ -41,7 +41,7 @@ function Experience() {
       </div>
 
       {/* Second Experience Card (Clone for new experience) */}
-      <div className="experience-container">
+      <div className="experience-container-two">
         <div className="heading">
           <img
             src="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg"
