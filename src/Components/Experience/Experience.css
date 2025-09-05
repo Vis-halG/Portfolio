@@ -8,6 +8,15 @@
   margin-bottom: 40px; /* Space between cards */
 }
 
+.experience-container-two{
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Needed for absolute positioning inside */
+  margin-bottom: 40px; /* Space between cards */
+}
 .heading {
   display: flex;
   flex-direction: column;
@@ -72,6 +81,14 @@
 /* Responsive Styling */
 @media (max-width: 1100px) {
   .experience-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow height to adjust dynamically */
+    padding: 20px 0;
+    margin-bottom: 30px; /* Space between cards in smaller screens */
+  }
+    .experience-container-two {
     flex-direction: column; /* Stack items vertically */
     align-items: center;
     justify-content: center;
