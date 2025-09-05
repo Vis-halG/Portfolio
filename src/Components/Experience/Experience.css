@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
   position: relative; /* Needed for absolute positioning inside */
-
+margin-bottom:10px;
 }
 
 
@@ -112,7 +112,7 @@
     font-size: 16px;
     width: 97vw; /* Make it more responsive */
     margin: 0px;
-    margin-top: 50px;
+    margin-top: 0px;
 
     border: 2px solid #e0e0e0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -123,6 +123,13 @@
   }
 
   .experience-container p {
+    width: 85vw;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 17px;
+    padding-top: 30px;
+  }
+   .experience-container-two p {
     width: 85vw;
     text-align: left;
     margin: 0 auto;
