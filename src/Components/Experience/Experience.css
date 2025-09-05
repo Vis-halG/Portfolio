@@ -48,6 +48,7 @@
   border: 1.5px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   color: #222; /* Text color */
+  margin-top:30px;
 }
 
 .experience-image {
