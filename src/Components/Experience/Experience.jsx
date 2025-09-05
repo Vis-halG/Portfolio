@@ -44,9 +44,9 @@ function Experience() {
       <div className="experience-container">
         <div className="heading">
           <img
-            src="https://via.placeholder.com/100"
-            alt="Company Logo"
-            className="experience-image"
+            src="https://design-style-guide.freecodecamp.org/img/fcc_primary_small.svg"
+            alt="FreeCodeCamp"
+            className="FreecodeCamp"
           />
           <h2>Company Name</h2>
         </div>
