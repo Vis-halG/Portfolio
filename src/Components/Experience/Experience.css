@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
   position: relative; /* Needed for absolute positioning inside */
-margin-bottom:10px;
+margin-bottom:20px;
 }
 
 
@@ -127,7 +127,7 @@ margin-bottom:10px;
     text-align: left;
     margin: 0 auto;
     font-size: 17px;
-    padding-top: 30px;
+    padding-top: 35px;
   }
    .experience-container-two p {
     width: 85vw;
@@ -138,6 +138,14 @@ margin-bottom:10px;
   }
 }
 
+.head-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 0 15px 0 15px;
+}
 @media (max-width: 950px) {
   .heading {
     font-size: 20px;
