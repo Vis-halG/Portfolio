@@ -48,7 +48,7 @@ function Experience() {
             alt="FreeCodeCamp"
             className="FreecodeCamp"
           />
-          <h2>Company Name</h2>
+          <h2>FreeCodeCamp</h2>
         </div>
         <div className="experience-content">
           <p className="training">
