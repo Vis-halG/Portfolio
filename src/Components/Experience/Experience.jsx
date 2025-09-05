@@ -52,13 +52,10 @@ function Experience() {
         </div>
         <div className="experience-content">
           <p className="training">
-            <strong>Role / Position</strong>
+            <strong>Responsive Web Design</strong>
           </p>
           <p>
-           Successfully completed ~300 hours of coursework covering HTML, CSS,
-Flexbox, Grid, and Responsive Design principles. Built and deployed
-multiple projects including a Survey Form, Tribute Page, Technical
-Documentation Page, Product Landing Page.
+        I completed the Responsive Web Design Certification from freeCodeCamp. This certification required me to complete more than 300 hours of coursework and projects, strengthening my expertise in HTML5, CSS3, Flexbox, CSS Grid, and mobile-first responsive design. The projects I built — including a Technical Documentation Page, Tribute Page, and Product Landing Page — helped me gain practical experience in designing clean, accessible, and user-friendly interfaces.
           </p>
         </div>
       </div>
