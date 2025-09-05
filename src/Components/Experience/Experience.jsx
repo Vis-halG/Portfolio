@@ -46,7 +46,7 @@ function Experience() {
           <img
             src="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg"
             alt="FreeCodeCamp"
-            className="FreecodeCamp"
+            className="experience-image"
           />
           <h2>FreeCodeCamp</h2>
         </div>
