@@ -46,7 +46,7 @@ function Experience() {
             alt="FreeCodeCamp"
             className="experience-image"
           />
-           <h2>Magic Bus Foundation</h2>
+           <h2>Free code camp</h2>
         </div>
         <div className="experience-content">
           <p className="training">
