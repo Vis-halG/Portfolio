@@ -50,7 +50,7 @@ function Experience() {
           />
           <h2>FreeCodeCamp</h2>
         </div>
-        <div className="experience-content">
+        <div className="experience-content experience-content-two">
           <p className="training">
             <strong>Responsive Web Design</strong>
           </p>
