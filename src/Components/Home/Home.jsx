@@ -24,7 +24,7 @@ const Home = () => {
               target="_blank"
               className=" hover:text-blue-700 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
             >
-             <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-square-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
