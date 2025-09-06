@@ -21,13 +21,13 @@ function Experience() {
         </div>
         <div className="experience-content">
           <p className="training">
-            <strong>Front-end Development (Training) <a
+            <strong>Front-end Development <a
               href="https://drive.google.com/your-magicbus-certificate-link"
               target="_blank"
               rel="noopener noreferrer"
               className="certificate-link"
             >
-              (View Certificate)
+              [View Certificate]
             </a> </strong>
           </p>
           <p>
@@ -69,7 +69,7 @@ function Experience() {
               rel="noopener noreferrer"
               className="certificate-link"
             >
-              (View Certificate)
+              [View Certificate]
             </a></strong>
           </p>
           <p>
