@@ -21,7 +21,7 @@ function Experience() {
             <strong>
               Front-end Development{" "}
               <a
-                href="https://drive.google.com/your-magicbus-certificate-link"
+                href="https://drive.google.com/file/d/1dAvfP98wkETZHUj7SD3ZkKmFvz5QJrQo/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="certificate-link"
@@ -63,7 +63,7 @@ function Experience() {
             <strong>
               Responsive Web Design{" "}
               <a
-                href="https://freecodecamp.org/certification/your-freecodecamp-certificate"
+                href="https://www.freecodecamp.org/certification/vishal-g/responsive-web-design"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="certificate-link"
