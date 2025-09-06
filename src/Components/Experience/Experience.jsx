@@ -1,9 +1,11 @@
 import React from "react";
 import "./Experience.css";
+
 function Experience() {
   return (
     <div className="experience" id="experience_section">
       <h2 className="head-title">Experience</h2>
+
       {/* First Experience Card */}
       <div className="experience-container">
         <div className="heading">
@@ -12,7 +14,17 @@ function Experience() {
             alt="Magic Bus Foundation"
             className="experience-image"
           />
-          <h2>Magic Bus Foundation</h2>
+          <h2>
+            Magic Bus Foundation{" "}
+            <a
+              href="https://drive.google.com/your-magicbus-certificate-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="certificate-link"
+            >
+              (View Certificate)
+            </a>
+          </h2>
         </div>
         <div className="experience-content">
           <p className="training">
@@ -20,21 +32,22 @@ function Experience() {
           </p>
           <p>
             Completed an intensive offline training program in Web Designing & UX/UI,
-            gaining expertise in modern web development skills and industry-relevant tools. 
-            The curriculum included hands-on experience with: HTML, CSS, JavaScript, AngularJS, ReactJS, 
-            and Adobe Photoshop.
+            gaining expertise in modern web development skills and industry-relevant tools.
+            The curriculum included hands-on experience with: HTML, CSS, JavaScript,
+            AngularJS, ReactJS, and Adobe Photoshop.
           </p>
           <p>
-            Additional Tools: Advanced web designing tools and technologies essential for crafting 
-            responsive and user-friendly websites.
+            Additional Tools: Advanced web designing tools and technologies essential
+            for crafting responsive and user-friendly websites.
           </p>
           <p>
-            Worked with a team to create user interfaces with React, using HTML, CSS, and JavaScript. 
-            Tested features for browser compatibility, staying current with front-end trends to 
-            enhance skills and deliver optimized solutions.
+            Worked with a team to create user interfaces with React, using HTML, CSS,
+            and JavaScript. Tested features for browser compatibility, staying current
+            with front-end trends to enhance skills and deliver optimized solutions.
           </p>
         </div>
       </div>
+
       {/* Second Experience Card (FreeCodeCamp) */}
       <div className="experience-container">
         <div className="heading">
@@ -43,24 +56,37 @@ function Experience() {
             alt="FreeCodeCamp"
             className="experience-image"
           />
-           <h2>Free code camp</h2>
+          <h2>
+            Free Code Camp{" "}
+            <a
+              href="https://freecodecamp.org/certification/your-freecodecamp-certificate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="certificate-link"
+            >
+              (View Certificate)
+            </a>
+          </h2>
         </div>
         <div className="experience-content experience-content-two">
           <p className="training">
             <strong>Responsive Web Design</strong>
           </p>
           <p>
-            I completed the Responsive Web Design Certification from freeCodeCamp. 
-            This certification required me to complete more than 300 hours of coursework and projects, 
-            strengthening my expertise in HTML5, CSS3, Flexbox, CSS Grid, and mobile-first responsive design.
+            I completed the Responsive Web Design Certification from freeCodeCamp.
+            This certification required me to complete more than 300 hours of coursework
+            and projects, strengthening my expertise in HTML5, CSS3, Flexbox, CSS Grid,
+            and mobile-first responsive design.
           </p>
           <p>
-            The projects I built — including a Technical Documentation Page, Tribute Page, and Product Landing Page — 
-            helped me gain practical experience in designing clean, accessible, and user-friendly interfaces.
+            The projects I built — including a Technical Documentation Page, Tribute Page,
+            and Product Landing Page — helped me gain practical experience in designing
+            clean, accessible, and user-friendly interfaces.
           </p>
         </div>
       </div>
     </div>
   );
 }
-export default Experience; 
+
+export default Experience;
