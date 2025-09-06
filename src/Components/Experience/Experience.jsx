@@ -26,7 +26,7 @@ function Experience() {
                 rel="noopener noreferrer"
                 className="certificate-link"
               >
-                📜 View Certificate
+                View Certificate🔗
               </a>
             </strong>
           </p>
@@ -68,7 +68,7 @@ function Experience() {
                 rel="noopener noreferrer"
                 className="certificate-link"
               >
-                📜 View Certificate
+                View Certificate🔗
               </a>
             </strong>
           </p>
