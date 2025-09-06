@@ -72,8 +72,8 @@
 /* ---------------- CERTIFICATE LINK ---------------- */
 .certificate-link {
   color: #0066cc; /* Link blue */
-  text-decoration: underline;
-  font-weight: 600;
+  text-decoration: none;
+  font-weight: 300;
   cursor: pointer;
   transition: color 0.3s ease;
   display: inline-flex;
