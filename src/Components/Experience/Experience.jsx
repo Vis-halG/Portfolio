@@ -14,21 +14,21 @@ function Experience() {
             alt="Magic Bus Foundation"
             className="experience-image"
           />
-          <h2>
-            Magic Bus Foundation{" "}
-            
-          </h2>
+          <h2>Magic Bus Foundation</h2>
         </div>
         <div className="experience-content">
           <p className="training">
-            <strong>Front-end Development <a
-              href="https://drive.google.com/your-magicbus-certificate-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="certificate-link"
-            >
-              [View Certificate]
-            </a> </strong>
+            <strong>
+              Front-end Development{" "}
+              <a
+                href="https://drive.google.com/your-magicbus-certificate-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="certificate-link"
+              >
+                📜 View Certificate
+              </a>
+            </strong>
           </p>
           <p>
             Completed an intensive offline training program in Web Designing & UX/UI,
@@ -56,21 +56,21 @@ function Experience() {
             alt="FreeCodeCamp"
             className="experience-image"
           />
-          <h2>
-            Free Code Camp{" "}
-           
-          </h2>
+          <h2>Free Code Camp</h2>
         </div>
         <div className="experience-content experience-content-two">
           <p className="training">
-            <strong>Responsive Web Design  <a
-              href="https://freecodecamp.org/certification/your-freecodecamp-certificate"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="certificate-link"
-            >
-              [View Certificate]
-            </a></strong>
+            <strong>
+              Responsive Web Design{" "}
+              <a
+                href="https://freecodecamp.org/certification/your-freecodecamp-certificate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="certificate-link"
+              >
+                📜 View Certificate
+              </a>
+            </strong>
           </p>
           <p>
             I completed the Responsive Web Design Certification from freeCodeCamp.
