@@ -71,40 +71,18 @@
 
 /* ---------------- CERTIFICATE LINK ---------------- */
 .certificate-link {
-  color: #0066cc; /* Classic link blue */
+  color: #0066cc; /* Link blue */
   text-decoration: underline;
   font-weight: 600;
   cursor: pointer;
-  position: relative;
   transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; /* space between emoji and text */
 }
 
 .certificate-link:hover {
   color: #004080; /* Darker blue on hover */
-}
-
-/* Tooltip styling */
-.certificate-link::after {
-  content: attr(data-tooltip); /* Tooltip text from data attribute */
-  position: absolute;
-  bottom: 125%; /* Position above the link */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  font-size: 12px;
-  padding: 5px 8px;
-  border-radius: 5px;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.certificate-link:hover::after {
-  opacity: 1;
-  visibility: visible;
 }
 
 /* ---------------- RESPONSIVE STYLING ---------------- */
