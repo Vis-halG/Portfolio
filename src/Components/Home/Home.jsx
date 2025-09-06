@@ -22,7 +22,7 @@ const Home = () => {
              <a
               href="https://github.com/Vis-halG"
               target="_blank"
-              className=" hover:text-blue-700 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#]"
+              className=" hover:text-blue-700 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
             >
              <i class="fa-brands fa-github"></i>
             </a>
