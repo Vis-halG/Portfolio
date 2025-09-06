@@ -46,7 +46,7 @@ function Experience() {
             alt="FreeCodeCamp"
             className="experience-image"
           />
-           <h2>Free code camp</h2>
+          <h2>Free code camp</h2>
         </div>
         <div className="experience-content experience-content-two">
           <p className="training">
@@ -60,6 +60,18 @@ function Experience() {
           <p>
             The projects I built — including a Technical Documentation Page, Tribute Page, and Product Landing Page — 
             helped me gain practical experience in designing clean, accessible, and user-friendly interfaces.
+          </p>
+
+          {/* Certificate link */}
+          <p>
+            <a
+              href="https://www.freecodecamp.org/certification/USERNAME/responsive-web-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="certificate-link"
+            >
+              View Certificate
+            </a>
           </p>
         </div>
       </div>
