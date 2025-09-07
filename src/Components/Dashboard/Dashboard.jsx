@@ -16,8 +16,8 @@ const Dashboard = () => {
         <div className="left-card">
           {/* First Card */}
           <div className="one-card">
-          <img src={`./images/${projects[0].image}`} alt={projects[0].title} />
-          <p>{projects[0].title}</p>
+            <img src={`./images/${projects[0].image}`} alt={projects[0].title} />
+            <p>{projects[0].title}</p>
           </div>
 
           {/* Second Card - Featured Project */}
@@ -29,32 +29,32 @@ const Dashboard = () => {
 
         {/* Right Section */}
         <div className="right-card">
-          {/* Third Card (Search Bar) */}
+          {/* Third Card */}
           <div className="three-card">
-              
-          <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
-                <p>{projects[3].title}</p>
+            <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
+            <p>{projects[3].title}</p>
           </div>
 
           {/* Fourth Card - Project Grid */}
           <div className="four-card">
             <div className="four-grid-one">
-                <div className="four-a">
-                  
+              <div className="four-a">
                 <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
                 <p>{projects[3].title}</p>
-                </div>
-                <div className="four-b">
-                  
-                  <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
-                  <p>{projects[3].title}</p>
-                  </div>
+              </div>
+
+              <div className="four-b">
+                <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
+                <p>{projects[3].title}</p>
+              </div>
             </div>
+
             <div className="four-grid-two">
               <div className="four-c">
                 <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
                 <p>{projects[3].title}</p>
               </div>
+
               <div className="four-d">
                 <div className="four-btn">
                   <button className="btn-1">1</button>
