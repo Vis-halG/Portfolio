@@ -19,42 +19,39 @@ const Home = () => {
             I am a <span className="font-bold text-[#ff5f49] ">Front-End Developer</span> skilled in building attractive websites and web apps using HTML, CSS, Tailwind, JavaScript, and React. I hold a BSc (IT) Degree from Valia College of Commerce and Science, University of Mumbai, with a CGPA of 7.32.
           </p>
 
+         {/* Social Links */}
           <div className="flex gap-[1rem] mt-[1rem]">
-
-              <a
+            <a
               href="https://github.com/Vis-halG"
               target="_blank"
-              className="  text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 "
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
             >
-           <i className="fab fa-github"></i>
-
-              
-
+              <i className="fab fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
               target="_blank"
-              className=" hover:text-blue-700 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
             >
               <i className="fab fa-linkedin"></i>
             </a>
             <a
               href="mailto:VishalGupta25980@gmail.com"
               target="_blank"
-              className="hover:text-[#ff5f49] text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
             >
               <i className="fas fa-envelope"></i>
             </a>
             <a
               href="https://wa.me/9773146258"
               target="_blank"
-              className="hover:text-green-500 text-[1.5rem] md:text-[1.5rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
             >
               <i className="fab fa-whatsapp"></i>
             </a>
             <a
               href="tel:+9773146258"
-              className="hover:text-blue-500 text-[1.4rem] md:text-[1.4rem] transition-transform duration-300 transform hover:scale-125 hover:text-[#ff5f49]"
+              className="text-[1.4rem] md:text-[1.4rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
             >
               <i className="fas fa-phone"></i>
             </a>
