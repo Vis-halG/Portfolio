@@ -18,6 +18,10 @@ const Footer = () => {
 
         {/* Social Links */}
         <div className="footer-social">
+          
+          <a href="https://github.com/Vis-halG">
+           <i className="fab fa-github"></i>
+          </a>
           <a href="https://www.linkedin.com/in/vishalsgupta" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i className="fab fa-linkedin"></i>
           </a>
