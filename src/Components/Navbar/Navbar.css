@@ -69,15 +69,16 @@ body {
   transition: color 0.3s ease, background 0.3s ease;
 }
 
-/* Underline animation */
+/* Underline animation from center */
 .nav-item a::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: -3px;
   width: 0%;
   height: 2px;
   background: linear-gradient(90deg, #ff6f61, #8e2de2);
+  transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
