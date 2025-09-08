@@ -145,7 +145,7 @@ const Projects = () => {
 
           <div className="footer-info">
             <p>Hover over cards to explore • Click to visit projects</p>
-            <a href="https://github.com/Vis-halG?tab=repositories" className="footer-link" target="_blank" rel="noopener noreferrer">View All</a>
+            <a href="https://github.com/Vis-halG?tab=stars" className="footer-link" target="_blank" rel="noopener noreferrer">View All</a>
           </div>
 
           <div className="flex justify-center">
