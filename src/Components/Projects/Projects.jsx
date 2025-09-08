@@ -116,7 +116,7 @@ const Projects = () => {
   const miniProjects = projects.filter(p => p.type === 'mini').length;
 
   return (
-    <div className="projects_section">
+    <div className="projects_section" id="projects_section">
       <div className="animated-projects-container">
         <div className="">
           <div className='stat-container'>
