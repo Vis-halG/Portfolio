@@ -137,7 +137,7 @@ const Projects = () => {
 
   return (
     <div className="animated-projects-container">
-      <div className="">
+      <div className="#projects_section">
         <div className='stat-container'>
         <div className='stat'>
         <div className="header">
