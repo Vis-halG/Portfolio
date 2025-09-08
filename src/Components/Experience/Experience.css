@@ -6,6 +6,7 @@
   text-align: center;
   position: relative; /* Needed for absolute positioning inside */
   margin-bottom: 20px;
+  padding-top:50px;
 }
 
 .heading {
