@@ -6,7 +6,7 @@ const Projects = () => {
   const listRef = useRef(null);
 
   const projects = [
-     {
+    {
       title: "Spotify (Clone)",
       subtitle: "Music streaming website UI built with React & Tailwind.",
       description: "Create immersive audio experiences. Learn how to use modern web APIs to your advantage whilst building streaming platforms.",
@@ -35,24 +35,8 @@ const Projects = () => {
       link: "https://aaradhyaenterprises.netlify.app/",
       type: "clone"
     },
-    // {
-    //   title: "Book My Show Clone", 
-    //   subtitle: "Movie ticket booking platform built with React & Tailwind.",
-    //   description: "Master React development from your very first component right through to things no one else ever teaches you.",
-    //   icon: (
-    //     <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    //       <rect width="18" height="18" x="3" y="3" rx="2"/>
-    //       <circle cx="9" cy="9" r="2"/>
-    //       <path d="M21 15.5c-.7-1.3-1.4-2.5-2.1-3.9-.2-.3-.5-.5-.9-.5s-.7.2-.9.5c-.7 1.4-1.4 2.6-2.1 3.9"/>
-    //     </svg>
-    //   ),
-    //   image: "./assets/Projects/BookMyShow.png",
-    //   link: "https://bookmyshow-clone-kappa.vercel.app/",
-    //   type: "clone"
-    // },
-   
     {
-      title: "Laptop Rent (web design)",
+      title: "Laptop Rent (Web Design)",
       subtitle: "Rental service website made with HTML, CSS, JS & GSAP.",
       description: "Take your users on a journey with the joy of tasteful scroll animation. You might not even need JavaScript.",
       icon: (
@@ -66,8 +50,8 @@ const Projects = () => {
       link: "https://laptoprent.netlify.app/",
       type: "basic"
     },
-     {
-      title: "Memory Card  (Mini Project)",
+    {
+      title: "Memory Card (Mini Project)",
       subtitle: "Productivity app built with modern frameworks.",
       description: "It's not all just easings and compositions. Time plays a crucial part in various UI patterns that might not seem obvious at first.",
       icon: (
@@ -81,7 +65,7 @@ const Projects = () => {
       type: "mini"
     },
     {
-      title: "Number Guessing  (Mini Project)",
+      title: "Number Guessing (Mini Project)",
       subtitle: "Modern responsive portfolio with animations.",
       description: "Do you really need a library for that? Sometimes stepping back and rethinking the problem yields a nifty solution.",
       icon: (
@@ -93,7 +77,6 @@ const Projects = () => {
       link: "https://number-game-mini.vercel.app/",
       type: "mini"
     },
-    
     {
       title: "Cursor Follower (Mini Project)",
       subtitle: "JS-based memory game with interactive animations.",
@@ -106,10 +89,7 @@ const Projects = () => {
       image: "./assets/Projects/Cursor.png",
       link: "https://cursor-follower-mini.vercel.app/",
       type: "mini"
-    },
-    
-   
- 
+    }
   ];
 
   const getGridColumns = () => {
@@ -137,90 +117,75 @@ const Projects = () => {
 
   return (
     <div className="projects_section">
-    <div className="animated-projects-container">
-      <div className="">
-        <div className='stat-container'>
-        <div className='stat'>
-        <div className="header">
-          <h1>Project Showcase</h1>
-          <p>Explore my collection of web development projects, featuring modern designs, interactive animations, and cutting-edge technologies.</p>
-        </div>
-        <div className="total-stats"> 
-          <h2 className="stat-number">{totalProjects.toString().padStart(2, '0')}+</h2>
-            <p className="stat-label">Total Projects</p>
-          
-        </div>
-        
+      <div className="animated-projects-container">
+        <div className="">
+          <div className='stat-container'>
+            <div className='stat'>
+              <div className="header">
+                <h1>Project Showcase</h1>
+                <p>Explore my collection of web development projects, featuring modern designs, interactive animations, and cutting-edge technologies.</p>
+              </div>
+              <div className="total-stats"> 
+                <h2 className="stat-number">{totalProjects.toString().padStart(2, '0')}+</h2>
+                <p className="stat-label">Total Projects</p>
+              </div>
+            </div>
+
+            <div className="stats-grid mx-auto">
+              <div className="stat-card">
+                <h2 className="stat-number">{webDesigns.toString().padStart(2, '0')}+</h2>
+                <p className="stat-label">Web Designs</p>
+              </div>
+              <div className="stat-card">
+                <h2 className="stat-number">{miniProjects.toString().padStart(2, '0')}+</h2>
+                <p className="stat-label">Mini Projects</p>
+              </div>
+            </div>
           </div>
 
-        <div className="stats-grid mx-auto">
-          
-          <div className="stat-card">
-            <h2 className="stat-number">{webDesigns.toString().padStart(2, '0')}+</h2>
-            <p className="stat-label">Web Designs</p>
+          <div className="footer-info">
+            <p>Hover over cards to explore • Click to visit projects</p>
+            <a href="https://github.com/Vis-halG?tab=repositories" className="footer-link" target="_blank" rel="noopener noreferrer">View All</a>
           </div>
-          <div className="stat-card">
-            <h2 className="stat-number">{miniProjects.toString().padStart(2, '0')}+</h2>
-            <p className="stat-label">Mini Projects</p>
-          </div>
-        </div>
-</div>
-<div className="footer-info">
-          <p>Hover over cards to explore • Click to visit projects</p>
-          <a href="https://github.com/Vis-halG?tab=repositories" className="footer-link" target="_blank" rel="noopener noreferrer">View All</a>
-        </div>
-        <div className="flex justify-center">
-          <ul
-            ref={listRef}
-            className="project-grid"
-            style={{ gridTemplateColumns: getGridColumns() }}
-            onMouseMove={(e) => {
-              const li = e.target.closest('li');
-              if (li) {
-                const index = Array.from(li.parentNode.children).indexOf(li);
-                setActiveIndex(index);
-              }
-            }}
-            onClick={(e) => {
-              const li = e.target.closest('li');
-              if (li && activeIndex === Array.from(li.parentNode.children).indexOf(li)) {
-                const link = projects[activeIndex].link;
-                if (link && link !== '#') {
-                  window.open(link, '_blank');
+
+          <div className="flex justify-center">
+            <ul
+              ref={listRef}
+              className="project-grid"
+              style={{ gridTemplateColumns: getGridColumns() }}
+              onMouseMove={(e) => {
+                const li = e.target.closest('li');
+                if (li) {
+                  const index = Array.from(li.parentNode.children).indexOf(li);
+                  setActiveIndex(index);
                 }
-              }
-            }}
-          >
-            {projects.map((project, index) => (
-              <li
-                key={index}
-                className="project-item"
-                data-active={activeIndex === index}
-              >
-                <article className="project-article">
-                  <h3 className="project-title">{project.title}</h3>
-                  <div className="project-icon">
-                    {project.icon}
-                  </div>
-                  <p className="project-description">{project.description}</p>
-                  <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
-                    <span>View Project</span>
-                  </a>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-image"
-                  />
-                </article>
-              </li>
-            ))}
-          </ul>
+              }}
+            >
+              {projects.map((project, index) => (
+                <li
+                  key={index}
+                  className="project-item"
+                  data-active={activeIndex === index}
+                  onClick={() => window.open(project.link, "_blank")}
+                >
+                  <article className="project-article">
+                    <h3 className="project-title">{project.title}</h3>
+                    <div className="project-icon">{project.icon}</div>
+                    <p className="project-description">{project.description}</p>
+                    <span className="project-link">View Project</span>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="project-image"
+                    />
+                  </article>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-
-        
       </div>
     </div>
-      </div>
   );
 };
 
