@@ -32,11 +32,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div>
-        {/* <img src="https://res.cloudinary.com/dbithmxnp/image/upload/v1738522762/Portfolio--_wrrlr8.png" alt="Portfolio" /> */}
-      
-
-<img src={PortfolioImg} alt="Portfolio" />
-
+        <img src={PortfolioImg} alt="Portfolio" />
       </div>
 
       <div
@@ -55,65 +51,41 @@ const Navbar = () => {
         <span className="close-btn" onClick={closeMobileMenu}>
           &times;
         </span>
-<div className="nav-items">
-        <li className="nav-item">
-          <a href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a href="#projects_section">Projects</a>
-        </li>
-       <li className="nav-item" id="skills">
-  <a href="#skills_section">Tech Stack</a>
-</li>
-        <li className="nav-item">
-          <a href="#experience_section">Experience</a>
-        </li>
-        <li className="nav-item">
-          <a href="#contact_section">Contact Us</a>
-        </li>
+
+        <div className="nav-items">
+          <li className="nav-item">
+            <a href="#">Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="#projects_section">Projects</a>
+          </li>
+          <li className="nav-item" id="skills">
+            <a href="#skills_section">Tech Stack</a>
+          </li>
+          <li className="nav-item">
+            <a href="#experience_section">Experience</a>
+          </li>
+          <li className="nav-item">
+            <a href="#contact_section">Contact Us</a>
+          </li>
         </div>
+
         <div className="social-icons">
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            className="social-icon"
-          >
+          <a href="https://www.instagram.com" target="_blank" className="social-icon" rel="noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            className="social-icon"
-          >
+          <a href="https://www.twitter.com" target="_blank" className="social-icon" rel="noreferrer">
             <i className="fab fa-twitter"></i>
           </a>
-          <a
-            href="https://web.telegram.org"
-            target="_blank"
-            className="social-icon"
-          >
+          <a href="https://web.telegram.org" target="_blank" className="social-icon" rel="noreferrer">
             <i className="fab fa-telegram-plane"></i>
           </a>
-          <a
-            href="https://www.whatsapp.com"
-            target="_blank"
-            className="social-icon"
-          >
+          <a href="https://www.whatsapp.com" target="_blank" className="social-icon" rel="noreferrer">
             <i className="fab fa-whatsapp"></i>
           </a>
         </div>
 
-{/*         <div className="search-container">
-          <input className="search-input" type="text" placeholder="Search.." />
-          <i className="fas fa-search" id="search-icon"></i>
-        </div>
- */}
-        {/* Mobile Theme & CV Download */}
-        {/* Desktop Theme & CV Preview */}
         <div className="ThemeCV-mb">
-          {/* <button onClick={toggleTheme} className="theme-toggle">
-            {isDarkTheme ? "🌞" : "🌙"}
-          </button> */}
           <button
             className="DownloadCV"
             onClick={() => {
@@ -128,12 +100,7 @@ const Navbar = () => {
         </div>
       </ul>
 
-      {/* Desktop Theme & CV Download */}
-      {/* Desktop Theme & CV Preview */}
       <div className="ThemeCV">
-        {/* <button onClick={toggleTheme} className="theme-toggle">
-          {isDarkTheme ? "🌞" : "🌙"}
-        </button> */}
         <button
           className="DownloadCV"
           onClick={() => {
