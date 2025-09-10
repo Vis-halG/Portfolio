@@ -1,7 +1,7 @@
 import React from "react";
 import "./Dashboard.css";
 
-// Project data
+// Static project data
 const projects = [
   { id: 1, title: "E-commerce Clone", image: "ecommerce.jpg" },
   { id: 2, title: "To-Do App", image: "todo.jpg" },
@@ -14,35 +14,35 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div className="cards">
         
-        {/* ---------------- Left Section ---------------- */}
+        {/* ===== Left Section ===== */}
         <div className="left-card">
           
-          {/* First Card (E-commerce Clone) */}
+          {/* Primary Card: E-commerce Clone */}
           <div className="one-card">
             <img src={`./images/${projects[0].image}`} alt={projects[0].title} />
             <p>{projects[0].title}</p>
           </div>
 
-          {/* Second Card - Featured Project (Again E-commerce Clone for now) */}
+          {/* Featured Card: Same as Primary (E-commerce Clone) */}
           <div className="two-card">
             <img src={`./images/${projects[0].image}`} alt={projects[0].title} />
             <p>{projects[0].title}</p>
           </div>
         </div>
 
-        {/* ---------------- Right Section ---------------- */}
+        {/* ===== Right Section ===== */}
         <div className="right-card">
           
-          {/* Third Card (Netflix Clone) */}
+          {/* Highlighted Project: Netflix Clone */}
           <div className="three-card">
             <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
             <p>{projects[3].title}</p>
           </div>
 
-          {/* Fourth Card - Grid layout with multiple mini cards */}
+          {/* Grid Layout with Multiple Mini Cards */}
           <div className="four-card">
             
-            {/* First row of grid */}
+            {/* Grid Row 1: Two Mini Cards */}
             <div className="four-grid-one">
               <div className="four-a">
                 <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
@@ -55,25 +55,25 @@ const Dashboard = () => {
               </div>
             </div>
 
-            {/* Second row of grid */}
+            {/* Grid Row 2: One Project + Pagination/Label */}
             <div className="four-grid-two">
               
-              {/* Left part (Netflix again) */}
+              {/* Another Project Card */}
               <div className="four-c">
                 <img src={`./images/${projects[3].image}`} alt={projects[3].title} />
                 <p>{projects[3].title}</p>
               </div>
 
-              {/* Right part (Buttons + More Projects) */}
+              {/* Footer Section: Pagination Buttons + Label */}
               <div className="four-d">
                 
-                {/* Pagination / Step buttons */}
+                {/* Step Buttons */}
                 <div className="four-btn">
                   <button className="btn-1">1</button>
                   <button className="btn-2">2</button>
                 </div>
 
-                {/* Label for more projects */}
+                {/* 'More Projects' Label */}
                 <div className="four-e">
                   <p>More Projects</p>
                 </div>
@@ -81,6 +81,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+        
       </div> 
     </div>
   );
