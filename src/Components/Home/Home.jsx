@@ -72,7 +72,7 @@ const Home = () => {
             className="w-[100rem] md:w-[37rem] h-auto"
             src={showOriginalImage ? 
               "https://res.cloudinary.com/dwtn2kajc/image/upload/v1739437437/Main-OG_rfy4zm.png" : 
-              "https://res.cloudinary.com/dwtn2kajc/image/upload/v1747854583/Untitled_design_3_1_uxiddn.png"}
+              "https://res.cloudinary.com/dwtn2kajc/image/upload/v1758036761/Untitled_design_3_1_uxiddn.png"}
             alt="Hero"
           />
         </div>
