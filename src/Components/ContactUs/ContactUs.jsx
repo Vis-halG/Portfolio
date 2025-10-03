@@ -40,7 +40,7 @@ const ContactUs = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder=" &nbsp;&nbsp; YOUR EMAIL ADDRESS"
+              placeholder=" &nbsp;&nbsp; YOUR EMAIL ADDRESS..."
               className="input-field"
             />
             to get things started.
