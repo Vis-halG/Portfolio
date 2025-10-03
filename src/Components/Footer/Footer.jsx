@@ -36,7 +36,7 @@ const Footer = () => {
           </a>
         </div>
         </div>
-        {/* Copyright */}
+      
         <div className="footer-copyright">
           &copy; {new Date().getFullYear()} Vishal S. Gupta. All rights reserved.
         </div>
