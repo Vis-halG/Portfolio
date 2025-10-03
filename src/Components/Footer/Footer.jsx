@@ -15,7 +15,6 @@ const Footer = () => {
           <a href="#contact">Contact Us</a>
         </nav>
 
-        {/* Social Links */}
         <div className="footer-social">
           
           <a href="https://github.com/Vis-halG">
