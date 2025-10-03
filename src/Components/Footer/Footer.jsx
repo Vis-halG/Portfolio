@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-split">
-        {/* Navigation Links */}
         <nav className="footer-nav">
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
