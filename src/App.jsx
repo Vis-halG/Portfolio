@@ -6,11 +6,13 @@ import Skills from "./Components/Skills/Skills.jsx";
 import Experience from "./Components/Experience/Experience.jsx";
 import ContactUs from "./Components/ContactUs/ContactUs.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import CursorFollower from "./Components/CursorFollower/CursorFollower.jsx";
 import "./App.css";
 
 function App() {
   return (
     <div>
+      <CursorFollower />
       <Navbar />
       <Home />
       <Projects/>

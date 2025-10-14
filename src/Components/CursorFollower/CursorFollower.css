@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* cursor: none; Uncomment to hide the default cursor */
+}
+
+.circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #ff6f61;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.7),
+              0 0 20px rgba(255, 111, 97, 0.5),
+              0 0 30px rgba(255, 111, 97, 0.3);
+  transition:
+    border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 0.4s ease;
+}
+
+.circle.box-shape {
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 111, 97, 0.9),
+              0 0 50px rgba(255, 111, 97, 0.7),
+              0 0 80px rgba(255, 111, 97, 0.5);
+}
+
+span {
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+span:hover {
+  color: #ff6f61;
+}
+
+span.font-bold.text-\[\#ff5f49\] {
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
