@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./cursorFollower.css";
+import "./CursorFollower.css";
 
 const CursorFollower = () => {
   const circleRef = useRef(null);
