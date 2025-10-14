@@ -13,7 +13,7 @@ const CursorFollower = () => {
 
     let currentScale = 0;
     let currentAngle = 0;
-    const speed = 0.5; // smoother & balanced speed
+    const speed = 0.05; // smoother & balanced speed
 
     let hoveredRect = null;
     let isHovering = false;
@@ -23,7 +23,7 @@ const CursorFollower = () => {
       mouse.y = e.clientY;
 
       const el = e.target;
-      const isTextElement = ["H3", "SPAN"].includes(el.tagName);
+      const isTextElement = ["SPAN"].includes(el.tagName);
 
       if (isTextElement) {
         hoveredRect = el.getBoundingClientRect();
@@ -46,7 +46,7 @@ const CursorFollower = () => {
       previousMouse.y = mouse.y;
 
       const velocity = Math.min(Math.sqrt(deltaX ** 2 + deltaY ** 2) * 4, 150);
-      const scaleValue = (velocity / 150) * 0.8;
+      const scaleValue = (velocity / 150) * 2;
       currentScale += (scaleValue - currentScale) * speed;
 
       const angle = (Math.atan2(deltaY, deltaX) * 180) / Math.PI;
