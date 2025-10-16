@@ -155,7 +155,7 @@ h1 {
   transition-delay: calc(var(--speed) * 0.25);
 }
 
-.stat-container {
+ .stat-container {
   margin-top: -22px;
   z-index: 1;
   position: relative;
@@ -166,11 +166,12 @@ h1 {
   width: 100%;
   padding: 2rem;
   background: rgba(255, 95, 73, 0.7);
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  border: 5px solid #ffffff;
+  border: 10px solid #ffffff;
   text-align: left;
   padding-top: 50px;
+
 }
 
 .stat {
@@ -264,9 +265,9 @@ h1 {
     justify-content: center;
     padding: 1rem;
     background: rgba(255, 95, 73, 0.7);
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    border: 3px solid #ffffff;
+    border: 10px solid #ffffff;
   }
 
   .stat {
