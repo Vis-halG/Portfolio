@@ -24,34 +24,34 @@ const Home = () => {
             <a
               href="https://github.com/Vis-halG"
               target="_blank"
-              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-120 hover:text-[#f05743]"
             >
               <i className="fab fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
               target="_blank"
-              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-120 hover:text-[#f05743]"
             >
               <i className="fab fa-linkedin"></i>
             </a>
             <a
               href="mailto:VishalGupta25980@gmail.com"
               target="_blank"
-              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-120 hover:text-[#f05743]"
             >
               <i className="fas fa-envelope"></i>
             </a>
             <a
               href="https://wa.me/9773146258"
               target="_blank"
-              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
+              className="text-[1.5rem] md:text-[1.5rem] text-[#222] transition-transform duration-300 transform hover:scale-120 hover:text-[#f05743]"
             >
               <i className="fab fa-whatsapp"></i>
             </a>
             <a
               href="tel:+9773146258"
-              className="text-[1.4rem] md:text-[1.4rem] text-[#222] transition-transform duration-300 transform hover:scale-125 hover:text-[#f05743]"
+              className="text-[1.4rem] md:text-[1.4rem] text-[#222] transition-transform duration-300 transform hover:scale-120 hover:text-[#f05743]"
             >
               <i className="fas fa-phone"></i>
             </a>

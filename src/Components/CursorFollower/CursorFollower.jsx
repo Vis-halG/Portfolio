@@ -5,6 +5,12 @@ const CursorFollower = () => {
   const circleRef = useRef(null);
 
   useEffect(() => {
+    // Check if the device is a mobile screen (or any screen with a max-width of 768px)
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (isMobile) {
+      return; // Exit the effect if it's a mobile screen
+    }
+
     const circle = circleRef.current;
 
     const mouse = { x: 0, y: 0 };
@@ -13,7 +19,7 @@ const CursorFollower = () => {
 
     let currentScale = 0;
     let currentAngle = 0;
-    const speed = 0.05; // smoother & balanced speed
+    const speed = 0.05;
 
     let hoveredRect = null;
     let isHovering = false;
@@ -23,7 +29,7 @@ const CursorFollower = () => {
       mouse.y = e.clientY;
 
       const el = e.target;
-      const isTextElement = ["SPAN"].includes(el.tagName);
+      const isTextElement = ["I", "SPAN"].includes(el.tagName);
 
       if (isTextElement) {
         hoveredRect = el.getBoundingClientRect();
@@ -46,18 +52,19 @@ const CursorFollower = () => {
       previousMouse.y = mouse.y;
 
       const velocity = Math.min(Math.sqrt(deltaX ** 2 + deltaY ** 2) * 4, 150);
-      const scaleValue = (velocity / 150) * 2;
+      const scaleValue = (velocity / 150) * 0.25;
       currentScale += (scaleValue - currentScale) * speed;
 
       const angle = (Math.atan2(deltaY, deltaX) * 180) / Math.PI;
       if (velocity > 20) currentAngle = angle;
 
-      let transform = `translate(${pos.x}px, ${pos.y}px) translate(-50%, -50%) rotate(${currentAngle}deg) scale(${1 + currentScale}, ${1 - currentScale})`;
+      let transform = `translate(${pos.x}px, ${pos.y}px) translate(-50%, -50%) rotate(${currentAngle}deg) scale(${
+        1 + currentScale
+      }, ${1 - currentScale})`;
 
-      // 🟦 Hover effect → Horizontal box (taller + narrower)
       if (isHovering && hoveredRect) {
-        const width = hoveredRect.width +10; // slightly narrower
-        const height = 35; // taller box
+        const width = hoveredRect.width + 10;
+        const height = 35;
 
         circle.style.width = `${width}px`;
         circle.style.height = `${height}px`;
@@ -69,7 +76,6 @@ const CursorFollower = () => {
           hoveredRect.left + hoveredRect.width / 2
         }px, ${hoveredRect.top + hoveredRect.height / 2}px) translate(-50%, -50%)`;
       } else {
-        // 🌀 Default circular mode
         circle.style.width = `40px`;
         circle.style.height = `40px`;
         circle.style.borderRadius = `50%`;
@@ -87,6 +93,12 @@ const CursorFollower = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  // Conditionally render the cursor follower div based on the device type
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  if (isMobile) {
+    return null; // Don't render anything on mobile
+  }
 
   return <div className="circle" ref={circleRef}></div>;
 };

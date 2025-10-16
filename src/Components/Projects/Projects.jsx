@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Projects.css';  // import external CSS
+import './Projects.css';
 
 const Projects = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0); // Initialized to 0
+  const [expandedIndex, setExpandedIndex] = useState(0); // Initialized to 0
   const listRef = useRef(null);
 
   const projects = [
@@ -115,6 +116,8 @@ const Projects = () => {
   const webDesigns = projects.filter(p => p.type !== 'mini').length;
   const miniProjects = projects.filter(p => p.type === 'mini').length;
 
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
   return (
     <div className="projects_section" id="projects_section">
       <div className="animated-projects-container">
@@ -154,10 +157,12 @@ const Projects = () => {
               className="project-grid"
               style={{ gridTemplateColumns: getGridColumns() }}
               onMouseMove={(e) => {
-                const li = e.target.closest('li');
-                if (li) {
-                  const index = Array.from(li.parentNode.children).indexOf(li);
-                  setActiveIndex(index);
+                if (!isMobile) {
+                  const li = e.target.closest('li');
+                  if (li) {
+                    const index = Array.from(li.parentNode.children).indexOf(li);
+                    setActiveIndex(index);
+                  }
                 }
               }}
             >
@@ -165,8 +170,20 @@ const Projects = () => {
                 <li
                   key={index}
                   className="project-item"
-                  data-active={activeIndex === index}
-                  onClick={() => window.open(project.link, "_blank")}
+                  data-active={isMobile ? expandedIndex === index : activeIndex === index}
+                  onClick={() => {
+                    if (isMobile) {
+                      if (expandedIndex === index) {
+                        window.open(project.link, "_blank");
+                        setExpandedIndex(-1); // Optionally collapse after redirect
+                      } else {
+                        setExpandedIndex(index);
+                        setActiveIndex(index); // Keep activeIndex synced for the hover effect
+                      }
+                    } else {
+                      window.open(project.link, "_blank");
+                    }
+                  }}
                 >
                   <article className="project-article">
                     <h3 className="project-title">{project.title}</h3>
