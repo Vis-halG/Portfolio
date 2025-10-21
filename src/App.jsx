@@ -1,3 +1,5 @@
+// src/App.jsx
+
 import React, { useState, useEffect } from "react";
 import Home from "./Components/Home/Home.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
@@ -10,13 +12,13 @@ import CursorFollower from "./Components/CursorFollower/CursorFollower.jsx";
 import LoadingScreen from "./Components/LoadingScreen/LoadingScreen.jsx"; 
 import "./App.css";
 
-// 💡 Critical Image URLs and Timing Constants
+// 💡 STEP 1: Define all critical image URLs here
 const CLOUDINARY_IMAGE_URLS = [
   "https://res.cloudinary.com/dwtn2kajc/image/upload/v1739437437/Main-OG_rfy4zm.png",
   "https://res.cloudinary.com/dwtn2kajc/image/upload/v1758037232/Untitled_design_3_1_uxiddn_c_crop_w_1587_h_1663_x_0_y_0_t5gzpj.png"
 ];
 
-const MIN_DISPLAY_TIME = 1500; // 1500ms (1.5 seconds) minimum display time
+const MIN_DURATION = 1500; // 1500ms (1.5 seconds) minimum display time
 const FADE_DURATION = 400;  // CSS transition time (0.4s)
 
 // Helper function to load a single image using a Promise
@@ -34,44 +36,40 @@ function App() {
   const [showLoader, setShowLoader] = useState(true); 
 
   useEffect(() => {
-    let stopLoaderTimer;
-    
-    // 1. Image loading Promise
+    // 1. Create a Promise that resolves after the minimum time (1500ms)
+    const minTimerPromise = new Promise(resolve => 
+      setTimeout(resolve, MIN_DURATION)
+    );
+
+    // 2. Create a Promise that resolves when ALL images are loaded
     const imageLoadPromise = Promise.all(CLOUDINARY_IMAGE_URLS.map(preloadImage));
-    
-    // 2. Minimum time Promise
-    // We create a separate deferred function that will resolve AFTER image loading is done, 
-    // but only if images loaded quickly.
-    
-    // We'll use a single promise/timer resolution point:
-    const startLoadingTime = Date.now();
 
-    imageLoadPromise
-      .then(() => {
-        const timeElapsed = Date.now() - startLoadingTime;
-        const remainingDelay = Math.max(0, MIN_DISPLAY_TIME - timeElapsed);
-
-        // This timer ensures the MIN_DISPLAY_TIME is met. 
-        // If images took 200ms, remainingDelay is 1300ms.
-        // If images took 1700ms, remainingDelay is 0ms.
-        return new Promise(resolve => setTimeout(resolve, remainingDelay));
-      })
+    // 3. Wait for BOTH the minimum time AND the image loading to complete.
+    Promise.all([minTimerPromise, imageLoadPromise])
       .finally(() => {
-        // --- START FADE-OUT LOGIC ---
+        // Calculate the time when the fade-out should START (400ms before total stop time)
+        const totalTimeToKeepLoaderVisible = FADE_DURATION; 
 
-        // 1. Immediately trigger the CSS fade-out (setIsLoading(false))
-        setIsLoading(false); 
+        // Start the fade-out process
+        const startFadeTimer = setTimeout(() => {
+          setIsLoading(false); // Triggers CSS fade-out (isFading = true)
+        }, 0); // Start fade immediately after the Promise.all resolves
 
-        // 2. Remove the component after the CSS transition finishes.
-        stopLoaderTimer = setTimeout(() => {
+        // Remove the loader component completely after the fade duration
+        const stopLoaderTimer = setTimeout(() => {
           setShowLoader(false); 
-        }, FADE_DURATION); // Wait only for the 400ms CSS fade to complete
+        }, totalTimeToKeepLoaderVisible);
+
+        // Cleanup function for the timers
+        return () => {
+          clearTimeout(startFadeTimer);
+          clearTimeout(stopLoaderTimer);
+        };
       });
-      
-    // Cleanup function
-    return () => {
-      clearTimeout(stopLoaderTimer);
-    };
+
+    // Cleanup function (though timers are inside the async block)
+    return () => {};
+    
   }, []); // Run only once on mount
 
   // Conditionally render the LoadingScreen component.
