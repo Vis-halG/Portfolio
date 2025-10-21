@@ -15,7 +15,7 @@ function App() {
   const [showLoader, setShowLoader] = useState(true); 
 
   useEffect(() => {
-    const totalDuration = 1500; // Total loading time is 1.0 second
+    const totalDuration = 2000; // Total loading time is 1.0 second
     const fadeDuration = 400;   // CSS transition is 0.4 seconds
 
     // 1. Trigger the CSS fade-out effect.
