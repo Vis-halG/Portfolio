@@ -125,7 +125,7 @@ const Projects = () => {
           <div className='stat-container'>
             <div className='stat'>
               <div className="header">
-                <h1>Project Showcase</h1>
+                <h1> Project Showcase</h1>
                 <p>Explore my collection of web development projects, featuring modern designs, interactive animations, and cutting-edge technologies.</p>
               </div>
               <div className="total-stats"> 

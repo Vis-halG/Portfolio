@@ -19,14 +19,17 @@ function Experience() {
         <div className="experience-content">
           <p className="training">
             <strong>
-              Front-end Development{" "}
+              Front-end Development &nbsp;{" "}
               <a
                 href="https://drive.google.com/file/d/1dAvfP98wkETZHUj7SD3ZkKmFvz5QJrQo/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="certificate-link"
               >
+               <span>
                 View Certificate🔗
+              </span>
+               
               </a>
             </strong>
           </p>
@@ -61,14 +64,16 @@ function Experience() {
         <div className="experience-content experience-content-two">
           <p className="training">
             <strong>
-              Responsive Web Design{" "}
+              Responsive Web Design &nbsp;{" "}
               <a
                 href="https://www.freecodecamp.org/certification/vishal-g/responsive-web-design"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="certificate-link"
-              >
-                View Certificate🔗
+              ><span>
+                 View Certificate🔗
+              </span>
+               
               </a>
             </strong>
           </p>

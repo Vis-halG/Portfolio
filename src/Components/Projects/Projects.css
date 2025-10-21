@@ -5,12 +5,18 @@
   --speed: 0.6s;
 }
 
+/* =========================
+   HEADINGS
+========================= */
 h1 {
   font-size: 2.25rem;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.7);
 }
 
+/* =========================
+   PROJECT GRID
+========================= */
 .project-grid {
   background: white;
   border: 10px solid rgba(255, 255, 255, 0.3);
@@ -70,7 +76,7 @@ h1 {
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   white-space: nowrap;
   margin: 0;
   opacity: 0.6;
@@ -133,7 +139,7 @@ h1 {
   filter: grayscale(1) brightness(1.5);
   scale: 1.1;
   transition: filter calc(var(--speed) * 1.2) var(--easing),
-              scale calc(var(--speed) * 1.2) var(--easing);
+    scale calc(var(--speed) * 1.2) var(--easing);
   mask: radial-gradient(100% 100% at 90% 15%, #fff, #00000000);
 }
 
@@ -155,7 +161,10 @@ h1 {
   transition-delay: calc(var(--speed) * 0.25);
 }
 
- .stat-container {
+/* =========================
+   STATS SECTION
+========================= */
+.stat-container {
   margin-top: -22px;
   z-index: 1;
   position: relative;
@@ -171,7 +180,6 @@ h1 {
   border: 10px solid #ffffff;
   text-align: left;
   padding-top: 50px;
-
 }
 
 .stat {
@@ -188,13 +196,19 @@ h1 {
   width: 100%;
 }
 
+/* -------------------------
+   STAT CARDS (Main)
+------------------------- */
 .stat-card {
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent; /* invisible until hover */
   border-radius: 16px;
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s var(--easing), box-shadow 0.4s var(--easing);
+  transition:
+    transform 0.3s var(--easing),
+    box-shadow 0.3s var(--easing),
+    border-color 0.3s var(--easing);
   padding: 1rem;
   color: #eb0404;
   text-align: center;
@@ -206,18 +220,47 @@ h1 {
   justify-content: center;
   text-align: left;
   width: 100%;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid transparent;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s var(--easing),
+    box-shadow 0.3s var(--easing),
+    border-color 0.3s var(--easing);
+  padding: 1rem;
+  color: #eb0404;
 }
 
+/* Default state */
+.stat-card,
+.stat-card1 {
+  border: 2px solid transparent;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    border-width 0.3s ease;
+}
+
+/* Smooth hover animation */
+.stat-card:hover,
+.stat-card1:hover {
+  border-width: 5px;
+  border-color: #ff6850; /* bright orange border */
+  box-shadow: 0 0 15px rgba(255, 104, 80, 0.6),
+              0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+/* -------------------------
+   STAT CONTENT
+------------------------- */
 .total-stats {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.stat-card:hover,
-.stat-card1:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .stat-number {
@@ -233,6 +276,9 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* -------------------------
+   FOOTER
+------------------------- */
 .footer-info {
   display: flex;
   flex-direction: row;
@@ -249,6 +295,13 @@ h1 {
   transition: color 0.3s ease;
 }
 
+.footer-link:hover {
+  color: #ff5f49;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 @media (max-width: 768px) {
   .stats-grid {
     grid-template-columns: 1fr;

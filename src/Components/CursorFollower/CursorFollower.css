@@ -1,52 +1,31 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  /* cursor: none; Uncomment to hide the default cursor */
-}
-
 .circle {
   position: fixed;
   top: 0;
   left: 0;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #ff6f61;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #120402ff; /* 👈 Default is the original DARK color */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px rgba(255, 111, 97, 0.7),
-              0 0 20px rgba(255, 111, 97, 0.5),
-              0 0 30px rgba(255, 111, 97, 0.3);
+  /* Default shadow is based on the dark border color */
+  box-shadow: 0 0 10px #120402ff, 0 0 20px #120402;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition:
-    border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 1),
-    box-shadow 0.4s ease;
+    width 0.15s ease,
+    height 0.15s ease,
+    border 0.3s ease,
+    border-radius 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.05s linear;
 }
-
-.circle.box-shape {
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(255, 111, 97, 0.9),
-              0 0 50px rgba(255, 111, 97, 0.7),
-              0 0 80px rgba(255, 111, 97, 0.5);
+.click-text {
+  color: white; 
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
 }
-
-span {
-  display: inline-block;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-span:hover {
-  color: #ff6f61;
-}
-
-span.font-bold.text-\[\#ff5f49\] {
-  display: inline-block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
