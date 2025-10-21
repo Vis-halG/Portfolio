@@ -60,6 +60,7 @@
   padding: 5px;
   font-size: 1.3rem; 
   outline: none;
+  text-align: center;
 }
 
 .input-field::placeholder {

@@ -18,8 +18,7 @@ h1 {
    PROJECT GRID
 ========================= */
 .project-grid {
-  background: white;
-  border: 10px solid rgba(255, 255, 255, 0.3);
+  border: 10px solid  rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   display: grid;
   border-radius: 12px;
@@ -32,6 +31,10 @@ h1 {
   margin: 0;
   width: 100%;
   transition: grid-template-columns var(--speed) var(--easing);
+  
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .project-item {
@@ -45,6 +48,9 @@ h1 {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all var(--speed) var(--easing);
+  
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .project-item:hover {
@@ -220,7 +226,7 @@ h1 {
   justify-content: center;
   text-align: left;
   width: 100%;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.15);
   border: 1px solid transparent;
   border-radius: 16px;
   backdrop-filter: blur(12px);
