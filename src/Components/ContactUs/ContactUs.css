@@ -45,9 +45,9 @@
 }
 
 .form-text {
-  font-size:1.9rem;
+  font-size:1.7rem;
   font-weight: bold;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* ✅ Only input size increased */
@@ -56,9 +56,9 @@
   color: black;
   border: none;
   border-bottom: 2px solid #555;
-  margin: 0 10px 0 10px;
+  margin: 0px 10px 0px 0px;
   padding: 5px;
-  font-size: 1.3rem; /* Increased from 1rem */
+  font-size: 1.3rem; 
   outline: none;
 }
 
@@ -181,6 +181,6 @@
   }
 
   .input-field {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }

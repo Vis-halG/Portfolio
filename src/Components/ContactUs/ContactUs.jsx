@@ -55,7 +55,7 @@ const ContactUs = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder=" ENTER YOUR NAME"
+              placeholder=" ENTER YOUR NAME..."
               className="input-field"
               required
             />
