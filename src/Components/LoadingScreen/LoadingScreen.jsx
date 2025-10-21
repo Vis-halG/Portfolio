@@ -2,15 +2,18 @@
 import React from 'react';
 import './LoadingScreen.css';
 
-// Accept the new prop: isFading
+// We assume the fade-out logic from App.jsx is still managing the isFading prop
 const LoadingScreen = ({ isFading }) => {
   return (
-    // Use the isFading prop to apply the fade-out class
-    <div className={`loader-screen-overlay ${isFading ? 'fade-out' : ''}`}> 
-      <div className="loader">
-        <div className="inner one"></div>
-        <div className="inner two"></div>
-        <div className="inner three"></div>
+    <div className={`loading ${isFading ? 'fade-out' : ''}`}>
+      <div className="loading-text">
+        <span className="loading-text-words">L</span>
+        <span className="loading-text-words">O</span>
+        <span className="loading-text-words">A</span>
+        <span className="loading-text-words">D</span>
+        <span className="loading-text-words">I</span>
+        <span className="loading-text-words">N</span>
+        <span className="loading-text-words">G</span>
       </div>
     </div>
   );

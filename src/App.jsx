@@ -12,24 +12,40 @@ import "./App.css";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [showLoader, setShowLoader] = useState(true); 
 
   useEffect(() => {
-    // Set loading screen duration to 0.5 seconds (500ms)
-    const timer = setTimeout(() => {
-      setIsLoading(false); 
-    }, 500); 
+    const totalDuration = 1500; // Total loading time is 1.0 second
+    const fadeDuration = 400;   // CSS transition is 0.4 seconds
 
-    return () => clearTimeout(timer); 
+    // 1. Trigger the CSS fade-out effect.
+    // Time = 1000ms - 400ms = 600ms. Loader starts fading after 0.6 seconds.
+    const startFadeTimer = setTimeout(() => {
+      setIsLoading(false); // This applies the 'fade-out' class to LoadingScreen
+    }, totalDuration - fadeDuration); 
+
+    // 2. Unmount the LoadingScreen component after the total duration.
+    // This ensures the main app is visible only when the fade is complete.
+    const stopLoaderTimer = setTimeout(() => {
+      setShowLoader(false); 
+    }, totalDuration);
+    
+    return () => {
+      clearTimeout(startFadeTimer);
+      clearTimeout(stopLoaderTimer);
+    };
   }, []);
 
-  // Show the loading screen while isLoading is true
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
-
-  // Render the full application once loading is complete
+  // Conditionally render the LoadingScreen component.
+  // We pass isFading={!isLoading}.
+  const loader = showLoader ? <LoadingScreen isFading={!isLoading} /> : null;
+  
+  // Render the full application
   return (
     <div>
+      {/* The loader renders on top of the app until showLoader is false */}
+      {loader} 
+      
       <CursorFollower />
       <Navbar />
       <Home />
