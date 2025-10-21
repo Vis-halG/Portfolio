@@ -71,7 +71,7 @@ const Home = () => {
           <img
             className="w-[100rem] md:w-[37rem] h-auto"
             src={showOriginalImage ? 
-              "https://res.cloudinary.com/dwtn2kajc/image/upload/v1739437437/Main-OG_rfy4zm.png" : 
+              "public/Main-OG.png": 
               "https://res.cloudinary.com/dwtn2kajc/image/upload/v1758037232/Untitled_design_3_1_uxiddn_c_crop_w_1587_h_1663_x_0_y_0_t5gzpj.png"}
             alt="Hero"
           />
