@@ -18,174 +18,169 @@
   padding: 50px 20px 50px 20px;
 }
   
-  .contact-form {
-    
-    text-align: left;
-    display:flex;
-    
-  }
-  .contact-title {
-    text-align: left;
-   
-  }
-  .title {
-    font-size: 7rem;
-    font-weight: bold;
-    
-    line-height: 120px;
-    margin-top: -40px;
-  }
-  
-  .subtitle {
-    margin-left: 0;
-  }
-  
-  .form {
-    text-align: left;
+.contact-form {
+  text-align: left;
+  display:flex;
+}
+
+.contact-title {
+  text-align: left;
+}
+
+.title {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 120px;
+  margin-top: -40px;
+}
+
+.subtitle {
+  margin-left: 0;
+}
+
+.form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  font-size:1.9rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* ✅ Only input size increased */
+.input-field {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 2px solid #555;
+  margin: 0 10px 0 10px;
+  padding: 5px;
+  font-size: 1.3rem; /* Increased from 1rem */
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #777;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #666;
+} 
+
+@media (max-width: 1100px) {
+  .contact-form-container {
     display: flex;
     flex-direction: column;
-   
   }
-  
-  .form-text {
-    font-size:1.9rem;
-    font-weight: bold;
-    line-height: 1.6;
-  }
-  
-  .input-field {
-    background-color: transparent;
-    color: black;
-    border: none;
-    border-bottom: 2px solid #555;
-  margin: 0 10px 0 10px;
-    padding: 5px;
-    font-size: 1rem;
-    outline: none;
-  }
-  
-  .input-field::placeholder {
-    color: #777;
-  }
-  
-  .submit-button {
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #444;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-  }
-  
-  .submit-button:hover {
-    background-color: #666;
-  } 
-  @media (max-width: 1100px) {
-    
-    .contact-form-container {
-      display: flex;
-      flex-direction: column;
-    }
-    .subtitle {
-     
-      margin-bottom: 20px;
-    }
-    .title {
-    
-      font-size: 100px;
-     }
-    .form {
-     
-     margin-right: 12px;
-     margin-left: 12px;
-    }
-    .form-text {
-      font-size:25px;
-      
-    }
-    
-  .input-field {
-  
-    font-size: 15px;
-  }
-  
-}
-/* Responsive tweaks */
-@media (max-width: 925px) {
-  .title {
-    
-   font-size: 100px;
-  }
+
   .subtitle {
-    margin-top: -20px;
-    font-size: 15px;
-   
+    margin-bottom: 20px;
   }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .form {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
   .form-text {
     font-size:25px;
-   
   }
+
+  /* ✅ Input size slightly reduced but still readable */
   .input-field {
-  
-    font-size: 15px;
+    font-size: 1.1rem;
   }
 }
 
-/* Responsive tweaks */
+@media (max-width: 925px) {
+  .title {
+    font-size: 100px;
+  }
+
+  .subtitle {
+    margin-top: -20px;
+    font-size: 15px;
+  }
+
+  .form-text {
+    font-size:25px;
+  }
+
+  .input-field {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 900px) {
   .contact-form-container {
     margin-top: 20px;
     margin-bottom: 80px;
   }
+
   .title {
-    
-   font-size: 80px;
+    font-size: 80px;
   } 
+
   .form-text {
     font-size:25px;
-   
   }
+
   .input-field {
-  
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
+
 @media (max-width: 800px) {
   .title {
-    
-   font-size: 55px;
+    font-size: 55px;
   } 
+
   .subtitle {
     margin-top: -30px;
     font-size: 13px;
   }
+
   .form-text {
     font-size:20px;
-   
   }
+
   .input-field {
-  
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
+
 @media (max-width: 500px) {
   .title {
-    
-   font-size: 39px;
-   
+    font-size: 39px;
   } 
+
   .subtitle {
     margin-top: -35px;
     font-size: 12px;
   }
+
   .form-text {
     font-size:18px;
-   
   }
+
   .input-field {
-  
-    font-size: 10px;
+    font-size: 1rem;
   }
 }
-

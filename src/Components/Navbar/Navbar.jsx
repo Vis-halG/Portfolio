@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import PortfolioImg from '../../assets/images/Portfolio.png';
+import PortfolioImg from "../../assets/images/Portfolio.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home"); // 🔹 NEW
   const [isDarkTheme, setIsDarkTheme] = useState(
     localStorage.getItem("theme") === "dark"
   );
 
-  
   useEffect(() => {
     if (isDarkTheme) {
       document.body.classList.add("dark-theme");
@@ -30,7 +30,12 @@ const Navbar = () => {
     setIsDarkTheme((prev) => !prev);
   };
 
-  
+  // 🔹 Function to update active link
+  const handleSetActive = (section) => {
+    setActiveSection(section);
+    closeMobileMenu();
+  };
+
   return (
     <nav className="navbar">
       <div>
@@ -55,36 +60,55 @@ const Navbar = () => {
         </span>
 
         <div className="nav-items">
-          <li className="nav-item">
-            <a href="#">Home</a>
+          <li
+            className={`nav-item ${activeSection === "home" ? "active" : ""}`}
+          >
+            <a href="#" onClick={() => handleSetActive("home")}>
+              Home
+            </a>
           </li>
-          <li className="nav-item" >
-            <a href="#projects_section">Projects</a>
+          <li
+            className={`nav-item ${
+              activeSection === "projects" ? "active" : ""
+            }`}
+          >
+            <a href="#projects_section" onClick={() => handleSetActive("projects")}>
+              Projects
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="#skills_section">Tech Stack</a>
+          <li
+            className={`nav-item ${
+              activeSection === "skills" ? "active" : ""
+            }`}
+          >
+            <a href="#skills_section" onClick={() => handleSetActive("skills")}>
+              Tech Stack
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="#experience_section">Experience</a>
+          <li
+            className={`nav-item ${
+              activeSection === "experience" ? "active" : ""
+            }`}
+          >
+            <a
+              href="#experience_section"
+              onClick={() => handleSetActive("experience")}
+            >
+              Experience
+            </a>
           </li>
-          <li className="nav-item">
-            <a href="#contact_section">Contact Us</a>
+          <li
+            className={`nav-item ${
+              activeSection === "contact" ? "active" : ""
+            }`}
+          >
+            <a
+              href="#contact_section"
+              onClick={() => handleSetActive("contact")}
+            >
+              Contact Us
+            </a>
           </li>
-        </div>
-
-        <div className="social-icons">
-          <a href="https://www.instagram.com" target="_blank" className="social-icon" rel="noreferrer">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank" className="social-icon" rel="noreferrer">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="https://web.telegram.org" target="_blank" className="social-icon" rel="noreferrer">
-            <i className="fab fa-telegram-plane"></i>
-          </a>
-          <a href="https://www.whatsapp.com" target="_blank" className="social-icon" rel="noreferrer">
-            <i className="fab fa-whatsapp"></i>
-          </a>
         </div>
 
         <div className="ThemeCV-mb">
