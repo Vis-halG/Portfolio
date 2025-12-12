@@ -21,6 +21,20 @@ const Projects = () => {
       link: "https://spotify-clone-mauve-eight-16.vercel.app/",
       type: "clone"
     },
+
+        {
+      title: "Website Design",
+      subtitle: "JS-based memory game with interactive animations.",
+      description: "Grasp how to tame the pixel playground and when to do so. Whilst building with Performance Driven Development.",
+      icon: (
+        <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66L9.64 16.2a2 2 0 0 1-2.83-2.83l8.49-8.4"/>
+        </svg>
+      ),
+      image: "./assets/Projects/Hero.png",
+      link: "https://flexbox-ebon.vercel.app/",
+      type: "mini"
+    },
     {
       title: "E-commerce (Web Design)",
       subtitle: "Business website with animations using HTML, CSS, JS & GSAP.",
@@ -78,19 +92,7 @@ const Projects = () => {
       link: "https://number-game-mini.vercel.app/",
       type: "mini"
     },
-    {
-      title: "Cursor Follower (Mini Project)",
-      subtitle: "JS-based memory game with interactive animations.",
-      description: "Grasp how to tame the pixel playground and when to do so. Whilst building with Performance Driven Development.",
-      icon: (
-        <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66L9.64 16.2a2 2 0 0 1-2.83-2.83l8.49-8.4"/>
-        </svg>
-      ),
-      image: "./assets/Projects/Cursor.png",
-      link: "https://cursor-follower-mini.vercel.app/",
-      type: "mini"
-    }
+
   ];
 
   const getGridColumns = () => {
