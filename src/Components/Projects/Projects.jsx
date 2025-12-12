@@ -33,7 +33,20 @@ const Projects = () => {
       ),
       image: "./assets/Projects/Hero.png",
       link: "https://flexbox-ebon.vercel.app/",
-      type: "mini"
+      type: "clone"
+    },
+       {
+      title: "Website Design",
+      subtitle: "JS-based memory game with interactive animations.",
+      description: "Grasp how to tame the pixel playground and when to do so. Whilst building with Performance Driven Development.",
+      icon: (
+        <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66L9.64 16.2a2 2 0 0 1-2.83-2.83l8.49-8.4"/>
+        </svg>
+      ),
+      image: "./assets/Projects/image.png",
+      link: "https://agency-website-try.vercel.app/",
+      type: "clone"
     },
     {
       title: "E-commerce (Web Design)",
@@ -63,7 +76,7 @@ const Projects = () => {
       ),
       image: "./assets/Projects/LaptopRent.png",
       link: "https://laptoprent.netlify.app/",
-      type: "basic"
+      type: "clone"
     },
     {
       title: "Memory Card (Mini Project)",
