@@ -48,21 +48,21 @@ const Projects = () => {
       link: "https://agency-website-try.vercel.app/",
       type: "mini"
     },
-    {
-      title: "E-commerce (Web Design)",
-      subtitle: "Business website with animations using HTML, CSS, JS & GSAP.",
-      description: "Gain the confidence to build anything you envision, transforming motion, interaction, and design principles into second nature.",
-      icon: (
-        <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="m16 10a4 4 0 0 1-8 0"/>
-        </svg>
-      ),
-      image: "./assets/Projects/Enterprises.png",
-      link: "https://aaradhyaenterprises.netlify.app/",
-      type: "clone"
-    },
+    // {
+    //   title: "E-commerce (Web Design)",
+    //   subtitle: "Business website with animations using HTML, CSS, JS & GSAP.",
+    //   description: "Gain the confidence to build anything you envision, transforming motion, interaction, and design principles into second nature.",
+    //   icon: (
+    //     <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    //       <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+    //       <line x1="3" y1="6" x2="21" y2="6"/>
+    //       <path d="m16 10a4 4 0 0 1-8 0"/>
+    //     </svg>
+    //   ),
+    //   image: "./assets/Projects/Enterprises.png",
+    //   link: "https://aaradhyaenterprises.netlify.app/",
+    //   type: "clone"
+    // },
     {
       title: "Laptop Rent (Web Design)",
       subtitle: "Rental service website made with HTML, CSS, JS & GSAP.",
