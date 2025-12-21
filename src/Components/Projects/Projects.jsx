@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Projects.css';
 
 const Projects = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // Initialized to 0
-  const [expandedIndex, setExpandedIndex] = useState(0); // Initialized to 0
+  const [activeIndex, setActiveIndex] = useState(0); 
+  const [expandedIndex, setExpandedIndex] = useState(0); 
   const listRef = useRef(null);
 
   const projects = [
@@ -205,10 +205,10 @@ const Projects = () => {
                     if (isMobile) {
                       if (expandedIndex === index) {
                         window.open(project.link, "_blank");
-                        setExpandedIndex(-1); // Optionally collapse after redirect
+                        setExpandedIndex(-1); 
                       } else {
                         setExpandedIndex(index);
-                        setActiveIndex(index); // Keep activeIndex synced for the hover effect
+                        setActiveIndex(index); 
                       }
                     } else {
                       window.open(project.link, "_blank");
